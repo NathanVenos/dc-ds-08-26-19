@@ -1,8 +1,12 @@
-first_variable=4
-second_Variable=6
-third_variable = 8
+"""
+This is a demo program for a class exercise.
+"""
+FIRST_CONSTANT = 4
+SECOND_CONSTANT = 6
+THIRD_CONSTANT = 8
 
-total = (first_variable +
-           second_Variable -
-         third_variable)
-print(total)
+TOTAL = (FIRST_CONSTANT
+         + SECOND_CONSTANT
+         - THIRD_CONSTANT
+        )
+print(TOTAL)
