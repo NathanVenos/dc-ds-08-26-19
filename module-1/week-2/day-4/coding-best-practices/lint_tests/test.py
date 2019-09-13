@@ -1,4 +1,2 @@
-def dB(x) :
+def dB(x):
     return x * 2
-
-
