@@ -12,4 +12,4 @@
     E) Mahalanobis  
     F) All of the above  
     
-Solution: All of the above
+    Solution: All of the above
