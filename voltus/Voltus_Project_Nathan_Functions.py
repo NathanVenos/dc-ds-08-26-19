@@ -34,7 +34,8 @@ def resample_intervals(interval_df):
     resampled_series = pd.DataFrame()
     # separately resampling segments with different interval_widths
     for interval in interval_widths:
-        interval_time_series = time_series.loc[time_series['interval_width'] == interval].asfreq(f'{interval}S')
+        interval_time_series = time_series.loc[time_series['interval_width'] 
+                                                           == interval].asfreq(f'{interval}S')
         resampled_series = pd.concat([resampled_series, 
                                       interval_time_series])
     # resampling the time between a transition from different interval_widths
