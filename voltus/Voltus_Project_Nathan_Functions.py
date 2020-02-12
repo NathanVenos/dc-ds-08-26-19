@@ -29,6 +29,7 @@ def resample_intervals(interval_df):
     resampled data at its provided frequency such that gaps get filled with nulls.
     """ 
     time_series = interval_df.drop_duplicates()
+    time_series.dropna(inplace=True)
     time_series = time_series.set_index(interval_df['interval_end']).sort_index()
     interval_widths = time_series['interval_width'].unique()
     resampled_series = pd.DataFrame()
