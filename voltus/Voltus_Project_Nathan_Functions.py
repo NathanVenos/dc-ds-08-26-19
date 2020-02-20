@@ -41,16 +41,17 @@ def resample_intervals(interval_df):
         resampled_series = pd.concat([resampled_series, 
                                         interval_time_series])
     # resampling the time between a transition from different interval_widths
-    transitions = interval_width_transitions(interval_df)
-    for transition in transitions:
-        min_interval = min(time_series.loc[transition[0], 'interval_width'],
-                           time_series.loc[transition[1], 'interval_width'])
-        interval_time_series = time_series.loc[((time_series['interval_end'] == transition[0])
-                                                | (time_series['interval_end'] == transition[1]))
-                                               ].asfreq(f'{min_interval}S')
-        # the first and last value are already in the data so dropped to prevent duplicates
-        interval_time_series.drop([transition[0], transition[1]], inplace=True)
-        resampled_series = pd.concat([resampled_series, 
+    if len(interval_widths) > 1:
+      transitions = interval_width_transitions(interval_df)
+      for transition in transitions:
+          min_interval = min(time_series.loc[transition[0], 'interval_width'],
+                             time_series.loc[transition[1], 'interval_width'])
+          interval_time_series = time_series.loc[((time_series['interval_end'] == transition[0])
+                                                  | (time_series['interval_end'] == transition[1]))
+                                                 ].asfreq(f'{min_interval}S')
+          # the first and last value are already in the data so dropped to prevent duplicates
+          interval_time_series.drop([transition[0], transition[1]], inplace=True)
+          resampled_series = pd.concat([resampled_series, 
                                         interval_time_series])
     return resampled_series.sort_index()
 
