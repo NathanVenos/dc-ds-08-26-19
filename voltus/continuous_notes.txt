@@ -1,0 +1,17 @@
+    neither_as_daily = [a05598bc, adeeddca, d342df32, f4cfaa89, 5f10fb10,
+                        f6d9da6a, d7c0b775, 9a6fb8f6, 39b6927a, 2acbd281,
+                        9fe91411-9092-2ce4-aabc-dd3c6868d50a]
+
+    neither_as_cont = [f68751c2]
+
+    cont_as_cont = [e7ef7c8f, 9aa3b5ad, 15790985]
+
+    cont_as_daily = [fbba4fe0, 470f0ef8]
+
+    daily_as_cont = [6ba0dc29]
+
+    resolved = [416a448a, d082397d-d743-fcf5-b536-762d9c7f4a35]
+
+    fixed = f771d6db
+
+    removed = 0101ee7c, 7e03e2ca, 07ae0994, 3bb491cc
