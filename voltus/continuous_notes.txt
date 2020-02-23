@@ -15,3 +15,13 @@
     fixed = f771d6db
 
     removed = 0101ee7c, 7e03e2ca, 07ae0994, 3bb491cc
+
+start = 08:00
+stop = 20:15
+
+'min_high_start': datetime.time(0, 0),
+ 'max_high_stop': datetime.time(16, 30),
+
+ e7d819a2-4382-e7d1-a267-069c96a54333
+ 03:00:00 - 21:00:00
+ 591c3ec2-5ab5-f4fb-318d-4f46fc4d850d
