@@ -6,12 +6,12 @@
 - [Extensions](#extensions)
 
 ## The Deliverables
-Your code should be delivered as a zip file in an email to <engineering+jobs@voltus.co>, with source implementing the analysis and generating all other deliverables. Assume that the output of your code will be run in a production environment.  
+Your code should be delivered as a zip file in an email to XXX, with source implementing the analysis and generating all other deliverables. Assume that the output of your code will be run in a production environment.  
 **The emailed .zip file includes two files with functions: Voltus_Project_Nathan_Functions_Q1_2_Viz.py has functions used for questions 1 and 2 as well as my visualizations, Voltus_Project_Nathan_Functions_Q3.py has functions used for question 3.  
 A Jupyter Notebook, Voltus_Project_Nathan.ipynb will generate all deliverables and includes some narrative on my approach as well as the visualizations and some initial EDA while a corresponding Python file, Voltus_Project_Nathan.py will just generate the deliverables for questions 1, 2 and 3**
 
 Your code should:
-1. Output some artifact (CSV, database, etc.) answering questions 1, 2, and 3 by `site_id`. If you're unsure of what's acceptable, ping Liz at <ltheurer@voltus.co>.  
+1. Output some artifact (CSV, database, etc.) answering questions 1, 2, and 3 by `site_id`. If you're unsure of what's acceptable, ping XXX at XXX.  
 **provided as 3 separate .csv files in the deliverables folder**  
 2. Be readable on its own.
 3. Include your preferred language's version of a `requirements.txt` or `package.json` so that someone else can easily duplicate your environment/dependencies.  
