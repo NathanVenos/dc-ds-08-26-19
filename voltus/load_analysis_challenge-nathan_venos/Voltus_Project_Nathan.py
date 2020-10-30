@@ -15,9 +15,9 @@ import Voltus_Project_Nathan_Functions_Q1_2_Viz as functions_q12v
 conn = psycopg2.connect(
     database="interval_load_data",
     user='postgres',
-    password='Onei9yepahShac0renga',
-    host="test-interval-load-data.cwr8xr5dhgm1.us-west-2.rds.amazonaws.com",
-    port="5432"
+    password='XXX',
+    host="XXX",
+    port="XXX"
 )
 
 # querying the sites and their time period into a pandas DataFrame
